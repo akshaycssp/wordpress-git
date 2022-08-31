@@ -1,0 +1,182 @@
+*{
+    padding:0;
+    margin: 0;
+   
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+  
+}
+body{
+    font-family: montserrat;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+nav{
+    background:white;
+    height: 120px;
+    width:100%;
+}
+label.logo{
+    color: red;
+    font-size: 40px;
+    line-height:100px;
+    padding: 0 100px;
+    
+
+}
+nav ul{ float: right
+    
+    
+}
+nav ul li{ padding:6px;
+    display: inline-block;
+    line-height: 98px;
+   margin: 0 50px;
+}
+nav ul li a{
+    color:black;
+    font-size: 17px;
+}
+nav ul li:hover{background: #F2B6A9;
+    border-radius:5px;
+    
+    
+}
+
+
+
+
+.drpbtn{  
+  display:none; height:5.5%;
+  width: 80px;
+    text-align: center;
+ 
+   
+    
+}
+.drpbtn a:hover{  padding:0 1 0 2 px; margin: 7px; background: #ffcccc;}
+.drp:hover .drpbtn{
+    display: block 
+}
+
+.drpbtn:hover{
+   display: block 
+}
+
+
+.chkbtn{ font-size: 20px;
+    color: blue;
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    margin-top: 40px; display: none;
+    
+}
+#check{ display: none;}
+footer{
+    background:  #fcbbbb;
+    width=100%;
+    padding: 80px;
+    
+    margin: 100px;
+    margin-top: 1px;
+}
+.footer-container{
+    display:flex;
+    flex-direction:column;
+}
+.footer-container{
+    margin-bottom: 3em;
+}
+.footer-as h3, .footer-ab h3, .footer-c h3, .footer-get h3{ color: black;
+    font-size:1.2em;
+    margin-bottom:1em;
+}
+.footer-as a, .footer-ab a, .footer-c a{
+    color: grey;
+    text-decoration: none;
+    margin-bottom:.5em;
+    display: block;
+}
+.footer-get a{
+    display: inline-block; color: gray; margin-bottom: .5em;
+}
+.para{ padding: 100px; color: blue;}
+@media(max-width:952px){ label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }    
+}
+@media(max-width:858px)
+{
+    .chkbtn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background:skyblue;
+        top: 100px;
+        left:-100%;
+        text-align: right;
+        transition: all  2s;
+        
+        
+    }
+    nav ul li {
+        display:block;
+        line-height: 50px;
+    }
+    
+    
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: chocolate;
+    }
+    #check:checked~ ul{left:0;}
+    
+}
+@media (min-width: 992px){
+    footer{
+    background:  #fcbbbb;
+    width=100%;
+    padding: 20px;
+    
+    margin: 100px;
+    margin-top: 1px;
+}
+.footer-container{
+    display:flex;
+    flex-direction:row;
+}
+.footer-container{
+    margin-bottom: 3em;
+}
+    .footer-as , .footer-ab , .footer-c , .footer-get { width=33.3%; padding:5em } 
+.footer-as h3, .footer-ab h3, .footer-c h3, .footer-get h3{ color: black;
+    font-size:1.2em;
+    margin-bottom:1em;
+}
+.footer-as a, .footer-ab a, .footer-c a{
+    color: grey;
+    text-decoration: none;
+    margin-bottom:.5em;
+    display: block;
+}
+.footer-get a{
+    display: inline-block; color: gray; margin-bottom: .5em;
+}
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,200;1,300;1,400&display=swap');
